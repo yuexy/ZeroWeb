@@ -8,11 +8,18 @@
 	<title>Hello World</title>
 
 	<link rel="stylesheet" type="text/css" medio="screen" href="css/style.css" />
+	<script type="text/javascript" src="js/smooth.js"></script>
 
 </head>
 
 <body>
 
+
+	<form>
+		<input type="text" class="text" name="name" placeholder="Name">
+	</form>
+
+	
 	<ul class="live">
 		<li>这是第一个愿望</li>
 		<li>我希望</li>
@@ -51,7 +58,7 @@
 		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉</li>
 		<li>by：妹子1</li>
 	</ul>
-	<ul class="live">
+	<ul id="test" class="live">
 		<li>这是第一个愿望</li>
 		<li>我希望</li>
 		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉</li>
@@ -79,7 +86,11 @@
 		<li>Firefox sure does animate this effect nicely</li>
 		<li>This is so simple</li>
 	</ul>
+	<!-- <a id="gototop" href="js:void(0);" onclick="goTop();return false;">Top of Page</a> -->
+	<!-- <a id="gototop" onclick="goTop();">Top of Page</a> -->
+	<a id="gototop" href="#test">Top of Page</a>
 
+	
 </body>
 
 </html>
