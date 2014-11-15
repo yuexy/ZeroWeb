@@ -1,3 +1,37 @@
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+articale,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+vedio {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
 .live {
 	overflow: hidden;
 }
@@ -46,8 +80,11 @@ body {
   font: 1.33em 'Roboto Condensed', arial;
   color: #FFF;
   text-align: center;
-  background-image: -webkit-radial-gradient(circle, #3c3b52 0%, #252233 80%);
-  background-image: radial-gradient(circle, #3c3b52 0%, #252233 80%);
+  background: #2c2c2c;
+
+/*  background-image: -webkit-radial-gradient(circle, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(circle, #3c3b52 0%, #252233 80%);*/
+  margin: 0;
 }
 
 h1 {
@@ -72,4 +109,63 @@ ul {
   padding: 1.5em;
   margin: 2%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.myheader {
+	width: 100%;
+	height: 250px;
+	background: url(../res/image/header_background.jpg) right;
+	background-size: 100%;
+	overflow: hidden;
+	margin: 0;
+	top: 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.myheader > div {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.myheader img {
+	margin-top: 50px;
+	height: 150px;
+	float: left;
+}
+
+.backtop {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+.backtop > img {
+	width: 60px;
+}
+
+.toboy {
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+}
+.toboy > img {
+	width: 60px;
+}
+
+.togirl {
+	position: fixed;
+	bottom: 170px;
+	right: 30px;
+}
+.togirl > img {
+	width: 60px;
+}
+
+.page {
+	position:fixed;
+	bottom: 240px;
+	right: 30px;
+}
+.page > img {
+	width: 60px;
 }

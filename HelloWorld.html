@@ -11,71 +11,17 @@
 	<script type="text/javascript" src="js/smooth.js"></script>
 
 </head>
-
 <body>
+	<header class="myheader">
+		<div>
+			<img src="res/image/icon.png"/>
+		</div>
+	</header>
 	<form>
 		<input type="text" class="text" name="name" placeholder="Name">
 	</form>
 
-	
-	<ul class="live">
-		<li>这是第一个愿望</li>
-		<li>我希望</li>
-		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉</li>
-		<li>by：妹子1</li>
-	</ul>
-	<br>
-
-	<ul class="live">
-		<li>这是第一个愿望</li>
-		<li>我希望</li>
-		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉</li>
-		<li>by：妹子1</li>
-	</ul>
-	<ul class="live">
-		<li>这是第一个愿望</li>
-		<li>我希望</li>
-		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉</li>
-		<li>by：妹子1</li>
-	</ul>
-	<ul class="live">
-		<li>这是第一个愿望</li>
-		<li>我希望</li>
-		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉</li>
-		<li>by：妹子1</li>
-	</ul>
-	<ul class="live">
-		<li>这是第一个愿望</li>
-		<li>我希望</li>
-		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉</li>
-		<li>by：妹子1</li>
-	</ul>
-	<ul class="live">
-		<li>这是第一个愿望</li>
-		<li>我希望</li>
-		<li>扒拉扒拉扒拉扒拉扒</li>
-		<li>by：妹子1</li>
-	</ul>
-	<ul id="test" class="live">
-		<li>这是第一个愿望</li>
-		<li>我希望</li>
-		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉拉扒拉扒拉扒拉扒拉拉扒拉扒拉扒拉扒拉</li>
-		<li>by：妹子1</li>
-	</ul>
-	<ul class="live">
-		<li>这是第一个愿望</li>
-		<li>我希望</li>
-		<li>扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉拉扒拉扒拉扒拉扒拉扒拉扒拉扒拉</li>
-		<li>by：妹子1</li>
-	</ul>
-
-	<ul class="live">
-		<li>I have never seen anything like this</li>
-		<li>This is most certainly cool, and it can also work on long texts inside the list-item elements, which spans over multiple lines</li>
-		<li>Un-ordered lists are fun to play with</li>
-		<li>Firefox sure does animate this effect nicely</li>
-		<li>This is so simple</li>
-	</ul>
+	<div id="page" />
 
 	<ul class="live">
 		<li onmouseover="playSound()">I have never seen anything like this</li>
@@ -85,8 +31,18 @@
 		<li onmouseover="playSound()">This is so simple</li>
 	</ul>
 	<!-- <a id="gototop" href="js:void(0);" onclick="goTop();return false;">Top of Page</a> -->
-	<!-- <a id="gototop" onclick="goTop();">Top of Page</a> -->
-	<a id="gototop" href="#test">Top of Page</a>
+	<a class="backtop" id="gototop" onclick="goTop();">
+		<img src="res/image/backtop.png"/>
+	</a>
+	<a class="togirl" id="gototop" onclick="goTop();">
+		<img src="res/image/girl.png"/>
+	</a>
+	<a class="toboy" id="gototop" onclick="goTop();">
+		<img src="res/image/boy.png"/>
+	</a>
+	<a class="page" id="gotopage" href="#page">
+		<img src="res/image/page.png"/>
+	</a>
 	<div id="sounds"></div>
 </body>
 
