@@ -1,0 +1,250 @@
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+articale,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+vedio {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.live {
+	overflow: hidden;
+}
+.live > li {
+	list-style: none;
+	position: relative;
+	padding: 10px 0 10px 2em;
+	margin: 0 0 0 5px;
+	-webkit-transition: 3s;
+			transition: 3s;
+}
+.live > li::before {
+	position: absolute;
+	content: '\2022';
+	font-family: Arial;
+	color: #FFF;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-size: 1.8em;
+	opacity: 0;		//点的初始亮度
+	line-height: 0;
+	-webkit-transition: 3s;
+			transition: 3s;
+}
+.live > li:hover {
+	color: #FFF;
+}
+.live > li:hover::before {
+	-webkit-transform: scale(2);
+		-ms-transform: scale(2);
+			transform: scale(2);
+	opacity: 1;
+	text-shadow: 0 0 3px;
+	-webkit-transition: 3s;
+			transition: 3s;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font: 1.33em 'Roboto Condensed', arial;
+  color: #FFF;
+  text-align: center;
+  background: url(../res/image/background.jpg);
+  background-size: 100% auto;
+
+/*  background-image: -webkit-radial-gradient(circle, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(circle, #3c3b52 0%, #252233 80%);*/
+  margin: 0;
+}
+
+h1 {
+  margin: .5em 0 0;
+  padding: 0;
+  text-shadow: 0 4px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  -moz-box-sizing: padding-box;
+       box-sizing: padding-box;
+}
+
+ul {
+  width: 25%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0);		//字的初始颜色
+  border-radius: 5px;
+  padding: 1.5em;
+  margin: 2%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.myheader {
+	width: 100%;
+	height: 190px;
+	background: #F6F1CE url(../res/image/header_background.png) repeat 0 0;
+	//background-size: 100%;
+	overflow: hidden;
+	margin: 0;
+	top: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.myheader > div {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.myheader img {
+	margin-top: 50px;
+	height: 150px;
+	float: left;
+}
+.myheader p {
+	font-size: 42px;
+    font-weight: bold;
+}
+
+.backtop {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+.backtop > img {
+	width: 60px;
+}
+
+.toboy {
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+}
+.toboy > img {
+	width: 60px;
+}
+
+.togirl {
+	position: fixed;
+	bottom: 170px;
+	right: 30px;
+}
+.togirl > img {
+	width: 60px;
+}
+
+.page {
+	position:fixed;
+	bottom: 240px;
+	right: 30px;
+}
+.page > img {
+	width: 60px;
+}
+*:focus {outline: none;}
+.contact_form ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+    padding:12px;
+    }
+.contact_form input:focus, .contact_form textarea:focus {
+     padding-right:70px;
+     }
+.contact_form li:first-child, .contact_form li:last-child {
+    border-bottom:1px solid #777;
+}
+.contact_form h2 {
+    margin:0;
+    display: inline;
+    color: #cfcfcf;
+}
+.contact_form label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;
+    color: #cfcfcf;
+}
+.contact_form ul li input[type='Name'],[type='QQ'],[type='Tel']{
+    height:20px;
+    width:220px;
+    padding:5px 8px;
+    color: #cfcfcf;
+}
+.contact_form input, .contact_form textarea {
+    border:1px solid #aaa;
+    border-radius:5px;
+}
+.contact_form ul li input:focus, .contact_form ul li textarea:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+button.submit {
+    background-color: #b5b5b5;
+    border: 1px solid #797979;
+    border-bottom: 1px solid #797979;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #797979;
+    color: black;
+    font-weight: bold;
+    padding: 6px 20px;
+    position: relative;
+    left: 300px;
+    text-shadow: 0 -1px 0 #797979;
+}
+button.submit:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+button.submit:active {
+    border: 1px solid #20911e;
+}
+
+.contact_form input, .contact_form textarea { /* add this to the already existing style */
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s,width .25s;
+}
+.contact_form  ul li input[type="Name"]:focus{
+               width:300px;
+               }

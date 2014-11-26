@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Hello World</title>
+
+	<link rel="stylesheet" type="text/css" medio="screen" href="css/style.css" />
+	<script type="text/javascript" src="js/smooth.js"></script>
+
+</head>
+<body style="background-attachment: fixed">
+	<div id="page" />
+
+    <ul class="live" onmouseover="playSound(event)" onmouseout="ulOut(event)">
+        <li onmouseover="liOut(event)">这是第1条愿望</li>
+        <li onmouseover="liOut(event)">我想...</li>
+        <li onmouseover="liOut(event)">2333333333333333333333333</li>
+        <li onmouseover="liOut(event)">By：233</li>
+    </ul>
+    <ul class="live" onmouseover="playSound(event)" onmouseout="ulOut(event)">
+        <li onmouseover="liOut(event)">这是第2条愿望</li>
+        <li onmouseover="liOut(event)">我想...</li>
+        <li onmouseover="liOut(event)">2333333333333333333333333</li>
+        <li onmouseover="liOut(event)">By：233</li>
+    </ul>
+    <ul class="live" onmouseover="playSound(event)" onmouseout="ulOut(event)">
+        <li onmouseover="liOut(event)">这是第3条愿望</li>
+        <li onmouseover="liOut(event)">我想...</li>
+        <li onmouseover="liOut(event)">2333333333333333333333333</li>
+        <li onmouseover="liOut(event)">By：233</li>
+    </ul>
+    <ul class="live" onmouseover="playSound(event)" onmouseout="ulOut(event)">
+        <li onmouseover="liOut(event)">这是第4条愿望</li>
+        <li onmouseover="liOut(event)">我想...</li>
+        <li onmouseover="liOut(event)">2333333333333333333333333</li>
+        <li onmouseover="liOut(event)">By：233</li>
+    </ul>
+    <ul class="live" onmouseover="playSound(event)" onmouseout="ulOut(event)">
+        <li onmouseover="liOut(event)">这是第5条愿望</li>
+        <li onmouseover="liOut(event)">我想...</li>
+        <li onmouseover="liOut(event)">2333333333333333333333333</li>
+        <li onmouseover="liOut(event)">By：233</li>
+    </ul>
+
+	<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+	<div id="girl" />
+
+	<form class="contact_form" action="" method="post" name="contact_form">
+		<ul>
+			<li><h2><b>写下一个愿望</b></h2></li>
+			<li><label for="Name">姓名:</label>
+                <input style="background-color:transparent" type="Name" name="name" required/></li>
+            <li><label for="Tel">电话:</label>
+                <input style="background-color:transparent" type="Tel" name="phone"required/></li>
+            <li><label for="Dream">愿望:</label>
+                <textarea style="background-color:transparent;"name="wish" cols="27" rows="5" type="Dream"required></textarea></li>
+            <li><button class="submit" type="submit">提交</button></li>
+        </ul>
+</form>
+
+	<br>
+	<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+	<div id="boy" />
+
+
+   	<form class="contact_form" action="" method="post" name="contact_form">
+		<ul>
+			<li><h2><b>领取一个愿望</b></h2></li>
+			<li><label for="Name">姓名:</label>
+                <input style="background-color:transparent" type="Name" name="Name" required/></li>
+            <li><label for="QQ">愿望id:</label>
+                <input style="background-color:transparent" type="QQ" name="QQ" required/></li>
+            <li><label for="Tel">电话:</label>
+                <input style="background-color:transparent" type="Tel" name="Tel"required/></li>
+            <li><button class="submit" type="submit">确定</button></li>
+        </ul>
+   </form>
+	<!-- <a id="gototop" href="js:void(0);" onclick="goTop();return false;">Top of Page</a> -->
+	<a class="backtop" id="gototop" onclick="goTop();">
+		<img src="res/image/backtop.png"/>
+	</a>
+	<a class="togirl" id="gotogirl" href="#girl">
+		<img src="res/image/girl.png"/>
+	</a>
+	<a class="toboy" id="gotoboy" href="#boy">
+		<img src="res/image/boy.png"/>
+	</a>
+	<a class="page" id="gotopage" href="#page">
+		<img src="res/image/page.png"/>
+	</a>
+	<div id="sounds"></div>
+</body>
+
+</html>
